@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Bugiz.Models.PricingData
+
+
+<div class="container py-5">
+    <div class="row align-items-center mb-5">
+        <!-- Left Column -->
+        <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-2 fw-bold">Think,Plan and Track All in one place..</h1>
+            <p class="lead text-muted">Transform the way you work with an all-in-one platform designed for seamless planning, collaboration, and execution. From brainstorming ideas to tracking progress, streamline your workflow and bring clarity to every project. Stay organized, boost productivity, and turn your vision into reality—all in one powerful, intuitive space.</p>
+
+            <div class="mt-4">
+                <a href="#" class="btn btn-success btn-lg me-3">Free Demo</a>
+                <a href="#" class="text-decoration-underline text-dark fw-bold">Code Base</a>
+            </div>
+
+            <div class="mt-5 d-flex flex-wrap justify-content-center justify-content-lg-start gap-4">
+                <img src="~/img/dotnet.png" class="img-fluid" alt="dotnetmvc-logo" width="140">
+                <img src="~/img/dotnetcore.png" class="img-fluid" alt="dotnetcore-logo" width="100">
+                <img src="~/img/postgres.jpeg" class="img-fluid" alt="postgres-logo" width="100">
+                <img src="~/img/ef.png" class="img-fluid" alt="entity framework-logo" width="140">
+            </div>
+        </div>
+
+        <!-- Right Column (Image) -->
+        <div class="col-lg-5 mt-4 mt-lg-0">
+            <img src="~/img/ProjectsHomePage.png" class="img-fluid rounded shadow-lg" alt="Hero Image">
+        </div>
+    </div>
+    <section class="herobgcolor py-5 text-center text-md-start mb-2 m-8">
+        <div class="container d-flex flex-column text-center gap-5">
+            <div class="row w-100 p-5">
+                <div class="col-md-6 d-flex flex-row justify-content-between w-100">
+                    <div class="col">
+                        <p class="text-uppercase text-primary fw-bold">Why choose Bugiz</p>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="fw-bold">
+                            Built from the ground up with the developer experience in mind
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 p-5">
+                <div class="col-md-6 d-flex flex-row align-items-center justify-content-between w-100">
+                    <div class="col"> <img src="/img/Arrow.png" alt="Arrow pointing to text" class="mb-3 img-fluid" /></div>
+                    <div class="col-6">
+                        <p class="text-muted">
+                            Bugiz bug tracker / project management tool is designed to streamline
+                            allocation and distribution of tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            @if (Model?.pricingdata != null)
+{
+            <div>
+                @(await Html.RenderComponentAsync<Bugiz.Components.Pricing>(
+            RenderMode.ServerPrerendered,
+            new { Data = Model.pricingdata }
+        ))
+            </div>
+}
+else
+{
+            <p>Pricing data is not available.</p>
+            <p>Pricing data is not available.</p>
+}
+
+
+
+
+        </div>
+    </section>
+
+
+
+</div>

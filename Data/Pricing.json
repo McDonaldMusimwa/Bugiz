@@ -1,0 +1,19 @@
+{
+  "pricingData": [
+    {
+      "Head": "Individual Hobbyists",
+      "Description": "If you are an individual seeking to pursue personal hobby projects.",
+      "Image": ""
+    },
+    {
+      "Head": "Group of Open Source Developers",
+      "Description": "A group of developers working on hobby projects or open-source initiatives.",
+      "Image": ""
+    },
+    {
+      "Head": "Corporate",
+      "Description": "Can be tailored to meet the needs of enterprise-level businesses.",
+      "Image": ""
+    }
+  ]
+}

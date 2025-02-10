@@ -1,0 +1,33 @@
+﻿@using System.Net.Http
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.JSInterop
+@using System.IO
+
+
+
+@using Bugiz.Models
+@code {
+    [Parameter]
+    public IList<jsonData> Data { get; set; } = new List<jsonData>(); // Correct type
+}
+<h3>Pricing</h3>
+
+@if (Data != null && Data.Any())
+{
+    @foreach (var price in Data)
+    {
+        <div>
+            <h4>@price.Head</h4>
+            <p>@price.Description</p>
+            <img src="@price.Image" alt="@price.Head" />
+        </div>
+    }
+}
+else
+{
+    <p>No pricing data available.</p>
+}

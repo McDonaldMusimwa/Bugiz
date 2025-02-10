@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugiz", "Bugiz.csproj", "{97F899A1-BFB9-4836-A0B0-C4E457F82FA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BugizApi", "..\BugizApi\BugizApi.csproj", "{36E59349-1117-4EF7-8CF8-88CE21C121E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97F899A1-BFB9-4836-A0B0-C4E457F82FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F899A1-BFB9-4836-A0B0-C4E457F82FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F899A1-BFB9-4836-A0B0-C4E457F82FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F899A1-BFB9-4836-A0B0-C4E457F82FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D95DE63A-4D5F-4ABF-A4EF-9E16D1BB53E3}
+	EndGlobalSection
+EndGlobal
