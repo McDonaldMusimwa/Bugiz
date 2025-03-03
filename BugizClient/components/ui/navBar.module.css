@@ -5,3 +5,7 @@
 color: black;
     position: fixed;
 }
+
+.dropdown-pages{
+    display: block;
+}

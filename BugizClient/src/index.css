@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
- 
+ padding: .5rem;
   text-decoration: inherit;
 }
 a:hover {
