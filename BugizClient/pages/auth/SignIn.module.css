@@ -1,0 +1,13 @@
+@media only screen and (min-width: 600px) {
+  .container {
+    margin: auto;
+    padding: 10px;
+    position:relative;
+width: 60%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 800px;
+  }
+}

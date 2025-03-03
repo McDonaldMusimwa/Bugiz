@@ -14,16 +14,20 @@
     [Parameter]
     public IList<jsonData> Data { get; set; } = new List<jsonData>(); // Correct type
 }
-<h3>Pricing</h3>
+
 
 @if (Data != null && Data.Any())
 {
     @foreach (var price in Data)
     {
-        <div>
-            <h4>@price.Head</h4>
-            <p>@price.Description</p>
-            <img src="@price.Image" alt="@price.Head" />
+        <div class="col card" style="width:16rem">
+            <div class="card-body">
+            <h5 class="card-title">@price.Head</h5>
+            <p class="card-text">@price.Description</p>
+            </div>
+            <div class="card-img" >
+            <img src="@price.Image" alt="@price.Head" class="card-img-bottom" />
+            </div>
         </div>
     }
 }

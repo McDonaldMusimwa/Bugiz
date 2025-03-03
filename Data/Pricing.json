@@ -3,17 +3,17 @@
     {
       "Head": "Individual Hobbyists",
       "Description": "If you are an individual seeking to pursue personal hobby projects.",
-      "Image": ""
+      "Image": "/img/solodev.png"
     },
     {
-      "Head": "Group of Open Source Developers",
+      "Head": "Open Source Developers Team",
       "Description": "A group of developers working on hobby projects or open-source initiatives.",
-      "Image": ""
+      "Image": "/img/opensource.png"
     },
     {
       "Head": "Corporate",
       "Description": "Can be tailored to meet the needs of enterprise-level businesses.",
-      "Image": ""
+      "Image": "/img/cooperate.png"
     }
   ]
 }

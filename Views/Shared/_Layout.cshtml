@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Bugiz</title>
+    <link rel="icon" type="image/svg+xml" href="~/public/img/logoLarge.png" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Bugiz.styles.css" asp-append-version="true" />
@@ -31,16 +32,16 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Features</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Features" asp-action="Index">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">About</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="About" asp-action="Index">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Sign in</a>
+                            <a class="nav-link text-dark" href="http://localhost:5173/" target="_blank"  >Sign in</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">
+                            <a class="nav-link text-dark" href="http://localhost:5173/" target="_blank" >
                                 <button class="btn btn-outline-success">Free Demo</button>
                             </a>
                         </li>
@@ -50,14 +51,55 @@
         </nav>
 
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer class="border-top footer text-muted bg-dark text-white">
+        <div class="container text-center p-5">
+            <div class="row gap-4">
+                <div class="col d-flex flex-row mb-3 text-center">
+                    <h5 class="text-white">
+                        Who we are</h5c>
+                    <div class="flex-column">
+                        <p>Project Management</p>
+                        <p>Software development</p>
+
+                    </div>
+              
+                </div>
+                <div class="col d-flex flex-row mb-3 text-center">
+
+                    <h5 class="text-white">Company</h5>
+                        <div class="text-light" >
+                            <a>About Bugiz</a>
+                            <a>Careers</a>
+                        </div>
+                    
+          
+                </div>
+                <div class="col d-flex flex-row mb-3 text-center">
+
+                    <h5 class="text-light">Socials</h5>
+                    <div class="flex-column text-light">
+                        <a>Twitter</a>
+                        <a>Linkedin</a>
+                        <a>Youtube</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="text-success">
+            <hr>
+        </div>
+        <div class="container text-light">
             &copy; 2025 - Bugiz - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>

@@ -54,27 +54,33 @@
                     </div>
                 </div>
             </div>
-
-            @if (Model?.pricingdata != null)
-{
-            <div>
-                @(await Html.RenderComponentAsync<Bugiz.Components.Pricing>(
-            RenderMode.ServerPrerendered,
-            new { Data = Model.pricingdata }
-        ))
-            </div>
-}
-else
-{
-            <p>Pricing data is not available.</p>
-            <p>Pricing data is not available.</p>
-}
-
-
-
-
-        </div>
     </section>
+    <section>
+        <h3 class="text-center">Pricing</h3>
+
+        @if (Model?.pricingdata != null)
+        {
+            <div class="container-fluid text-center">
+                <div class="row gap-4">
+                    @(await Html.RenderComponentAsync<Bugiz.Components.Pricing>(
+                        RenderMode.ServerPrerendered,
+                        new { Data = Model.pricingdata }
+                        ))
+                </div>
+            </div>
+        }
+        else
+        {
+            <p>Pricing data is not available.</p>
+
+        }
+
+    </section>
+
+
+
+</div>
+
 
 
 

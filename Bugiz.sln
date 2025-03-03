@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugiz", "Bugiz.csproj", "{9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BugizApi", "..\BugizApi\BugizApi.csproj", "{36E59349-1117-4EF7-8CF8-88CE21C121E9}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "BugizClient", "BugizClient\BugizClient.esproj", "{B027689C-6B37-4407-9591-B0A29EDA76FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36E59349-1117-4EF7-8CF8-88CE21C121E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B027689C-6B37-4407-9591-B0A29EDA76FC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
