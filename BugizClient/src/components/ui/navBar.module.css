@@ -1,9 +1,10 @@
 .navigationbar{
-    background-color: #31572C;
+    background-color: #ffffff;
     display: inline;
     height: 100%;
 color: black;
     position: fixed;
+    border-line:black 1px solid;
 }
 
 .dropdown-pages{

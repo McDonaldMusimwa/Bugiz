@@ -1,4 +1,4 @@
-import Logo from '../../public/img/logoLarge.png';
+import Logo from '../../../public/img/logoLarge.png';
 import styles from './SignIn.module.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router'; // Make sure to import from 'react-router-dom'
@@ -77,7 +77,7 @@ function SignIn({ setAuthentication }) {
 
             <button
               type="submit" // Use type="submit" to trigger form submission
-              className="w-full bg-green-400 text-white py-2 rounded-md hover:bg-lime-600 transition"
+              className="w-full text-white bg-green-400 text-white py-2 rounded-md hover:bg-lime-600 transition"
             >
               Login
             </button>

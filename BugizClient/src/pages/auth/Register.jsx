@@ -1,4 +1,4 @@
-import Logo from '../../public/img/logoLarge.png';
+import Logo from '../../../public/img/logoLarge.png';
 import styles from './SignIn.module.css'
 
 
@@ -11,7 +11,7 @@ function Register(){
                             <img src={Logo} alt="Logo" className="max-w-full h-auto" />
                         </div>
                     </section>
-    
+
                     {/* Right Side: Form */}
                     <section className="text-black p-4">
                         <form className="space-y-4">
@@ -19,59 +19,59 @@ function Register(){
                             <hr className="border-t-2 border-gray-300" />
                             <div className="m-2 text-left">
                                 <label htmlFor="email" className="block text-sm font-medium">First Name:</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    className="block w-full h-10 rounded-md border border-gray-300 p-2" 
-                                    placeholder="Enter your First Name" 
-                                    required 
+                                <input
+                                    type="email"
+                                    id="email"
+                                    className="block w-full h-10 rounded-md border border-gray-300 p-2"
+                                    placeholder="Enter your First Name"
+                                    required
                                 />
                             </div>
                             <div className="m-2 text-left">
                                 <label htmlFor="email" className="block text-sm font-medium">Last Name:</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    className="block w-full h-10 rounded-md border border-gray-300 p-2" 
-                                    placeholder="Enter your Last Name" 
-                                    required 
+                                <input
+                                    type="email"
+                                    id="email"
+                                    className="block w-full h-10 rounded-md border border-gray-300 p-2"
+                                    placeholder="Enter your Last Name"
+                                    required
                                 />
                             </div>
                             <div className="m-2 text-left">
                                 <label htmlFor="email" className="block text-sm font-medium">Email:</label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    className="block w-full h-10 rounded-md border border-gray-300 p-2" 
-                                    placeholder="Enter your email" 
-                                    required 
+                                <input
+                                    type="email"
+                                    id="email"
+                                    className="block w-full h-10 rounded-md border border-gray-300 p-2"
+                                    placeholder="Enter your email"
+                                    required
                                 />
                             </div>
-    
+
                             <div className="m-2 text-left">
                                 <label htmlFor="password" className="block text-sm font-medium">Password:</label>
-                                <input 
-                                    type="password" 
-                                    id="password" 
-                                    className="block w-full h-10 rounded-md border border-gray-300 p-2" 
-                                    placeholder="Enter your password" 
-                                    required 
+                                <input
+                                    type="password"
+                                    id="password"
+                                    className="block w-full h-10 rounded-md border border-gray-300 p-2"
+                                    placeholder="Enter your password"
+                                    required
                                 />
                             </div>
                             <div className="m-2 text-left">
                                 <label htmlFor="password" className="block text-sm font-medium">Confirm Password:</label>
-                                <input 
-                                    type="password" 
-                                    id="password2" 
-                                    className="block w-full h-10 rounded-md border border-gray-300 p-2" 
-                                    placeholder="Enter your password" 
-                                    required 
+                                <input
+                                    type="password"
+                                    id="password2"
+                                    className="block w-full h-10 rounded-md border border-gray-300 p-2"
+                                    placeholder="Enter your password"
+                                    required
                                 />
                             </div>
-    
-    
-                            <button 
-                                type="submit" 
+
+
+                            <button
+                                type="submit"
                                 className="w-full bg-green-400 text-white py-2 rounded-md hover:bg-lime-600 transition"
                             >
                                 Register

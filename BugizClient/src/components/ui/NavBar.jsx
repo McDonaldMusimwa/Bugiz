@@ -1,5 +1,5 @@
 import { NavLink,useNavigate } from 'react-router'; // Correct import from 'react-router-dom'
-import styles from './NavBar.module.css';
+import styles from './navBar.module.css';
 import { useState } from 'react';
 import { CiSettings, CiMedicalClipboard, CiLogout } from 'react-icons/ci';
 import { AiOutlineDashboard } from 'react-icons/ai';
@@ -36,17 +36,17 @@ const NavBar = () => {
         {/* Logo with navigation */}
         <li>
           <NavLink to="/Dashboard">
-            <img src="/public/img/logoSmall.png" alt="Logo" />
+            <img src="/public/img/logoLarge.png" alt="Logo" />
           </NavLink>
         </li>
 
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-1/2">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-1/2 text-white">
           <ul className="flex flex-col space-y-2 text-left">
             {/* Navigation items */}
             <li>
               <NavLink
                 to="/Dashboard"
-                className="gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="text-black flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 <AiOutlineDashboard />
                 Dashboard
@@ -56,7 +56,7 @@ const NavBar = () => {
             <li>
               <button
                 type="button"
-                className="gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className=" text-black  gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                 onClick={() => setDropdownOpen(!dropdownOpen)} // Toggle dropdown visibility
               >
                 <HiOutlineLightningBolt />
@@ -84,7 +84,7 @@ const NavBar = () => {
                   <NavLink
                     key={project.key}
                     to={project.link}
-                    className="gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                    className="text-black gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   >
                     {project.name}
                   </NavLink>
@@ -95,7 +95,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/Messages"
-                className="gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="text-black gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 <FiMessageSquare />
                 Messages
@@ -105,7 +105,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/Reports"
-                className="gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                className="text-black gap-2 flex items-center p-2 pl-11 w-full text-base font-normal text-black-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
               >
                 <CiMedicalClipboard />
                 Reports
@@ -115,7 +115,7 @@ const NavBar = () => {
             <li>
               <NavLink
                 to="/Settings"
-                className="gap-2 flex items-center p-2 text-base font-normal text-black-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                className="text-black gap-2 flex items-center p-2 text-base font-normal text-black-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
               >
                 <CiSettings />
                 Settings
@@ -138,7 +138,7 @@ const NavBar = () => {
 
           {/* Logout section */}
           <li
-            className="flex flex-row items-center gap-1 text-white text-center cursor-pointer"
+            className="flex flex-row items-center gap-1 text-black text-center cursor-pointer"
             onClick={handleLogout}
           >
             <CiLogout />
@@ -146,6 +146,7 @@ const NavBar = () => {
           </li>
         </div>
       </nav>
+      <div className={styles.line}></div>
     </aside>
   );
 };
